@@ -59,6 +59,27 @@ Optional Flags:
 box run <key> <args...>
 ```
 
+### Listing local commands
+
+```
+box ls
+```
+
+### Listing remote commands
+
+```
+box ls remote
+```
+
+### Fetching remote commands
+
+```
+box fetch <key>
+```
+
+Optional Flags:
+- `k` : Use alternate key for saving to avoid conflicts
+
 ### Example
 
 Run the following command to fetch docker/whalesay image and add it to box:
