@@ -123,9 +123,9 @@ cd naut
 - [x] `run` commands from box
 - [x] Works inside a docker container (socket mounting required)
 - [x] GPU support
-- [ ] `ls` local commands and images
+- [x] `ls` local commands and images
 - [ ] Create a library of common commands
-- [ ] `ls` remote commands and images
+- [x] `ls` remote commands and images
 - [ ] `fetch` for getting remote commands
 
 ## Acknowledgements
