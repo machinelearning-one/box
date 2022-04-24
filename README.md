@@ -59,6 +59,27 @@ Optional Flags:
 box run <key> <args...>
 ```
 
+### Listing local commands
+
+```
+box ls
+```
+
+### Listing remote commands
+
+```
+box ls remote
+```
+
+### Fetching remote commands
+
+```
+box fetch <key>
+```
+
+Optional Flags:
+- `k` : Use alternate key for saving to avoid conflicts
+
 ### Example
 
 Run the following command to fetch docker/whalesay image and add it to box:
@@ -123,10 +144,11 @@ cd naut
 - [x] `run` commands from box
 - [x] Works inside a docker container (socket mounting required)
 - [x] GPU support
-- [ ] `ls` local commands and images
-- [ ] Create a library of common commands
-- [ ] `ls` remote commands and images
-- [ ] `fetch` for getting remote commands
+- [x] `ls` local commands and images
+- [x] `ls` remote commands and images
+- [x] `fetch` for getting remote commands
+- [ ] Create a library of common commands - (In progress)
+- [ ] V2: Use BubbleTea for interactivity
 
 ## Acknowledgements
 
