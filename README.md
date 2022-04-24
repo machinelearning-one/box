@@ -124,9 +124,10 @@ cd naut
 - [x] Works inside a docker container (socket mounting required)
 - [x] GPU support
 - [x] `ls` local commands and images
-- [ ] Create a library of common commands
 - [x] `ls` remote commands and images
-- [ ] `fetch` for getting remote commands
+- [x] `fetch` for getting remote commands
+- [ ] Create a library of common commands - (In progress)
+- [ ] V2: Use BubbleTea for interactivity
 
 ## Acknowledgements
 
