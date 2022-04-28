@@ -78,7 +78,13 @@ box fetch <key>
 ```
 
 Optional Flags:
-- `k` : Use alternate key for saving to avoid conflicts
+- `-k` : Use alternate key for saving to avoid conflicts
+
+### Adding an alias for frequently used commands
+
+```
+box alias -a <alias> <key> <optional-commands>
+```
 
 ### Example
 
@@ -110,6 +116,20 @@ It should output:
 '        \    \        __/             
 ____\______/    
 ```
+
+Let's say we use this command frequently and want to add an alias for it:
+
+```
+box alias -a say say
+```
+
+Now as long as you are in a directory with proper .box file, you can simply run `say` to execute the command.
+
+```
+say "box rocks!"
+```
+
+This should still produce the same output.
 
 ## Building from Source
 
@@ -147,6 +167,7 @@ cd naut
 - [x] `ls` local commands and images
 - [x] `ls` remote commands and images
 - [x] `fetch` for getting remote commands
+- [x] `alias` to avoid extra typing
 - [ ] Create a library of common commands - (In progress)
 - [ ] V2: Use BubbleTea for interactivity
 
