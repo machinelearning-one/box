@@ -18,7 +18,7 @@ var addCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		err := utils.TouchBoxFile()
 		if err != nil {
-			fmt.Println(err)
+			fmt.Println("Error accessing or creating .box file")
 			return
 		}
 		key, _ := cmd.Flags().GetString("key")

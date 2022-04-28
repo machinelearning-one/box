@@ -25,7 +25,7 @@ var runCmd = &cobra.Command{
 		var boxes map[string]core.BoxConfig
 		bytes, err := ioutil.ReadFile(".box")
 		if err != nil {
-			fmt.Println("Error reading .box file")
+			fmt.Println("Error reading .box file, are you in the right directory?")
 			return
 		}
 		err = json.Unmarshal(bytes, &boxes)
