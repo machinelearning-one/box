@@ -11,7 +11,7 @@ func TruePath(cmp string, vols []types.MountPoint) (string, error) {
 	dest := ""
 	for i, pair := range vols {
 		dest = pair.Destination
-		if dest == cmp[:len(dest)] {
+		if (len(cmp) >= len(dest)) && (dest == cmp[:len(dest)]) {
 			match = i
 			break
 		}

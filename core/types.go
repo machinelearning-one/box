@@ -44,7 +44,7 @@ func ConfigToBox(config BoxConfig, rest []string) (Box, error) {
 		if err != nil {
 			return box, err
 		}
-		path := ""
+		path := cwd
 		// Check if inside a container
 		if utils.InsideContainer() {
 			// Get container ID
