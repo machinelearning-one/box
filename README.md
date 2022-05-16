@@ -147,14 +147,14 @@ git clone https://github.com/machinelearning-one/box.git
 2. Change directories and run the following command to build the binary:
 
 ```sh
-cd naut
-@GOOS=linux go build -ldflags="-s -w"
+cd box
+go build -ldflags="-s -w"
 ```
 
 3. (Optional) Compress the binary:
 
 ```sh
-@upx --brute naut
+upx --brute box
 ```
 
 ## Features Roadmap
