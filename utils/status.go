@@ -16,7 +16,7 @@ func InsideContainer() bool {
 }
 
 func ContainerIdentity() (string, error) {
-	cmd := exec.Command("sh", "-c", "cat /proc/self/cgroup | head -n 1 | cut -d '/' -f3")
+	cmd := exec.Command("sh", "-c", "cat /proc/self/mountinfo | grep '/docker/containers/' | head -1 | awk '{print $4}' | cut -d '/' -f6")
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	err := cmd.Run()
